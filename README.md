@@ -25,7 +25,7 @@ $$
 Then computing the Euler-Lagrange equations: 
 
 $$
-\begin{aligned}{ccc}
+\begin{array}{cc}
   \frac{d}{dt}\frac{\partial L}{\partial\dot{x}} - \frac{\partial L}{\partial x} &= 0 \\ 
   \frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}} - \frac{\partial L}{\partial \theta}  &= 0
 \end{array}
