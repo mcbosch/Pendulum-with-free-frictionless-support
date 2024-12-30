@@ -12,8 +12,8 @@ $$
 \end{array}
 $$
 
-Therefore we have the velocitie for the particle one is $(\dot{x},0)$ and for the particle two is $(\dot{x} + l\dot{\theta}cos(\theta), l\dot{\theta}sin(\theta))$.
-Calculating the cinetic energy and the potencial energy we obtain the next lagrangian:
+Therefore we have the velocitie for the particle one is $(\dot{x},0)$, and for the particle two is $(\dot{x} + l\dot{\theta}cos(\theta), l\dot{\theta}sin(\theta))$.
+Calculating the kinetic energy and the potencial energy, we obtain the next lagrangian:
 
 $$
 \begin{aligned}
@@ -25,8 +25,9 @@ $$
 Then computing the Euler-Lagrange equations: 
 
 $$
-\begin{array}{ccc}
-  \frac{d}{dt}\frac{\partial L}{\partial\dot{x}} - \frac{\partial L}{\partial x} = 0 & - &\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}} - \frac{\partial L}{\partial \theta} = 0
+\begin{aligned}{ccc}
+  \frac{d}{dt}\frac{\partial L}{\partial\dot{x}} - \frac{\partial L}{\partial x} &= 0 \\ 
+  \frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}} - \frac{\partial L}{\partial \theta}  &= 0
 \end{array}
 $$
 we obtain the next two equations:
@@ -38,6 +39,6 @@ $$
 \end{aligned}
 $$
 
-After that we only have to rename the variables $v:= \dot{x}$ and $w:=\dot{\theta}$ define our EDO and apply for example a Runge Kutta so we can aproximate the trayectori. Here we have an example with
+After that we only have to rename the variables $v:= \dot{x}$ and $w:=\dot{\theta}$ define our EDO and apply for example a Runge Kutta so we can approximate the trayectori. Here we have an example with
 initial conditions $x = -7.5; \theta = 120º; v = 1; w = 0$:
 ![pendulo](https://github.com/user-attachments/assets/bdc6ef6d-56b5-424c-920a-07e69942e981)
