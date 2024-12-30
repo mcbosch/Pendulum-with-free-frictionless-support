@@ -1,8 +1,8 @@
 # Pendulum-with-free-frictionless-support
-This program simulates the movement of a pendulum with a free fritionless support on the x-coordinate. See the following image:
+This program simulates the movement of a pendulum with a free frictionless support on the x-coordinate. See the following image:
 
 
-To calculate te path of the masses i defined an EDO with the ecuations that define the Lagrangian. We have two masses the support $M_1$, 
+To calculate the path of the masses i defined an ODE with the equations that define the Lagrangian. We have two masses the support $M_1$, 
 and the pendulum $M_2$. Then we define the position and velocitis of each particle with $x$ and $\theta$:
 
 $$
@@ -12,7 +12,7 @@ $$
 \end{array}
 $$
 
-Therefore we have the velociti for the particle one is $(\dot{x},0)$ and for the particle two is $(\dot{x} + l\dot{\theta}cos(\theta), l\dot{\theta}sin(\theta))$.
+Therefore we have the velocitie for the particle one is $(\dot{x},0)$ and for the particle two is $(\dot{x} + l\dot{\theta}cos(\theta), l\dot{\theta}sin(\theta))$.
 Calculating the cinetic energy and the potencial energy we obtain the next lagrangian:
 
 $$
@@ -22,7 +22,13 @@ $$
 \end{aligned}
 $$
 
-Then computing the Euler-Lagrange equations: $\frac{d}{dt}\frac{\partial L}{\partial\dot{x}} - \frac{\partial L}{\partial x} = 0$ and $\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}} - \frac{\partial L}{\partial \theta} = 0$
+Then computing the Euler-Lagrange equations: 
+
+$$
+\begin{array}{ccc}
+  \frac{d}{dt}\frac{\partial L}{\partial\dot{x}} - \frac{\partial L}{\partial x} = 0 & - &\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}} - \frac{\partial L}{\partial \theta} = 0
+\end{array}
+$$
 we obtain the next two equations:
 
 $$
