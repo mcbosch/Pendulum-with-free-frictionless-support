@@ -93,11 +93,11 @@ def update(frame):
     y_trail.append(y)
     trail.set_data(x_trail, y_trail)
     return line, trail
-step = 10  # Muestra solo cada 10 pasos
+
 
 ani = FuncAnimation(fig, update, frames=range(0,n,10), init_func=init, blit=True,interval = 5)
-
+plt.show()
 # Mostrar animación
-ani.save('pendulo.gif', fps=120, writer='pillow')
+# ani.save('pendulo.gif', fps=120, writer='pillow')
 
 
