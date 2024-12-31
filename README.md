@@ -22,14 +22,7 @@ $$
 \end{aligned}
 $$
 
-Then computing the Euler-Lagrange equations: 
-
-$$
-\begin{array}{cc}
-  \frac{d}{dt}\frac{\partial L}{\partial\dot{x}} - \frac{\partial L}{\partial x} &= 0 \\ 
-  \frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}} - \frac{\partial L}{\partial \theta}  &= 0
-\end{array}
-$$
+Then computing the Euler-Lagrange equations: $$\frac{d}{dt}\frac{\partial L}{\partial\dot{x}} - \frac{\partial L}{\partial x} = 0$$ and $$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}} - \frac{\partial L}{\partial \theta} = 0$$
 we obtain the next two equations:
 
 $$
